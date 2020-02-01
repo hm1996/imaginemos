@@ -19,6 +19,7 @@ let pedidoSchema = new Schema({
     },
     direccion: {
         type: String,
+        unique: true,
         required: [true, 'La direccion es obligatoria']
     },
     horas: {
